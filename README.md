@@ -1,2 +1,2 @@
 # internship-group-A
-CNN ve Keypoint tabanlı görüntü işleme çalışmaları
+Bu proje, MediaPipe ve derin öğrenme (LSTM) tekniklerini kullanarak video akışları veya önceden kaydedilmiş videolardaki insan hareketlerini (aksiyonlarını) otomatik olarak tanımayı amaçlar. Sistem, insan vücudunun anahtar noktalarını (keypoint'ler) çıkararak bu noktaların zaman içindeki değişimini analiz eder ve önceden tanımlanmış hareket sınıflarından birine (örneğin oturma, kalkma, alkışlama vb.) sınıflandırır.
