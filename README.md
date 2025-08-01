@@ -92,6 +92,7 @@ Projenin temel dizin ve dosya yapısı aşağıdaki gibidir:
 │   ├── pose_estimation.py
 │   └── realtime_pe.py
 └── README.md
+````
 
 1.  İşlemek istediğiniz video dosyasını projenizin ana dizinindeki `xxx.mp4` yoluna yerleştirin. (Alternatif olarak, kod içerisindeki `video_path` değişkenini kendi video dosyanızın yolu ile güncelleyebilirsiniz.)
     **Video Kaynağı Önerisi:** Kendi videolarınız yoksa veya farklı insan videolarıyla deneme yapmak isterseniz, telifsiz ve yüksek kaliteli insan videolarını [Pexels Video Kütüphanesi](https://www.pexels.com/search/videos/human/) üzerinden edinebilirsiniz.
@@ -104,7 +105,17 @@ https://www.kaggle.com/datasets/sharjeelmazhar/human-activity-recognition-video-
 3.  İşlem tamamlandığında, algılanan insanları, çizilen sınır kutularını, takip ID'lerini ve sayım bilgilerini içeren çıktı videosu, projenin `output/street_detection.mp4` konumunda bulunacaktır. Konsolda ayrıca toplam benzersiz kişi sayısı yazdırılacaktır.
 ---
 ## Tespit Örneği Görselleri
-*Bu görsel, modelin bir video üzerinde yaptığı insan tespitlerini, takip edilen ID'lerini ve anlık/toplam sayım bilgilerini göstermektedir.*
-### Tespit ve Sayım Örneği 2
-![Tespit ve Sayım Örneği 2]()
-*Farklı bir videoda modelin algılama, takip ve sayım yeteneğini sergileyen bir örnek.*
+### 📌 1. Pose Estimation
+Aşağıdaki görselde yalnızca tek bir karede (fotoğrafta) iskelet çıkarımı yapılmıştır:
+<p>
+  <img src="images/1.png" alt="Orijinal" width="45%" style="margin-right: 5%;">
+  <img src="images/2.png" alt="Pose Estimation - Tennis" width="45%">
+</p>
+
+
+### 📌 2. Pose Classification (Real-time)
+Bu görselde ise videodan alınan keypoint'ler ile "clapping" hareketi başarıyla sınıflandırılmıştır:
+<p>
+  <img src="images/4.png" alt="Orijinal" width="45%" style="margin-right: 5%;">
+  <img src="images/3.png" alt="Pose Classification" width="45%">
+</p>
