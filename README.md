@@ -13,7 +13,6 @@ Bu proje, bir video akışı üzerinden **YOLOv8 nano (yolov8n) modeli** kullana
 - [Örnek Görseller](#tespit-örneği-görselleri)
 ---
 ## Proje Amacı
-![Amaç](img/amac.png)
 Bu projenin temel amacı, **YOLOv8 nano (yolov8n)** gibi modern bir derin öğrenme modelini ve **ByteTrack** gibi bir nesne takip algoritmasını kullanarak gerçek dünya video akışlarında insan tespiti, takibi ve sayımı yeteneğini sergilemektir. Özellikle:
 * **Gerçek Zamanlı İnsan Tespiti ve Takibi:** Video kareleri üzerinde yüksek performansla insanları algılamak ve benzersiz ID'lerle takip etmek.
 * **İnsan Sayımı:** Her bir karedeki anlık insan sayısını ve tüm video boyunca görünen toplam benzersiz insan sayısını hesaplamak.
@@ -93,8 +92,11 @@ Projenin temel dizin ve dosya yapısı aşağıdaki gibidir:
 │   ├── pose_estimation.py
 │   └── realtime_pe.py
 └── README.md
+
 1.  İşlemek istediğiniz video dosyasını projenizin ana dizinindeki `xxx.mp4` yoluna yerleştirin. (Alternatif olarak, kod içerisindeki `video_path` değişkenini kendi video dosyanızın yolu ile güncelleyebilirsiniz.)
     **Video Kaynağı Önerisi:** Kendi videolarınız yoksa veya farklı insan videolarıyla deneme yapmak isterseniz, telifsiz ve yüksek kaliteli insan videolarını [Pexels Video Kütüphanesi](https://www.pexels.com/search/videos/human/) üzerinden edinebilirsiniz.
+ben Kaggele üzerinden aşağıdaki linkten verileri elde ettim :
+https://www.kaggle.com/datasets/sharjeelmazhar/human-activity-recognition-video-dataset/data
 2.  Ana Python betiğini çalıştırın (betiğinizin adı örneğin `main_counting_script.py` ise):
     ```bash
     python main_counting_script.py
@@ -102,9 +104,7 @@ Projenin temel dizin ve dosya yapısı aşağıdaki gibidir:
 3.  İşlem tamamlandığında, algılanan insanları, çizilen sınır kutularını, takip ID'lerini ve sayım bilgilerini içeren çıktı videosu, projenin `output/street_detection.mp4` konumunda bulunacaktır. Konsolda ayrıca toplam benzersiz kişi sayısı yazdırılacaktır.
 ---
 ## Tespit Örneği Görselleri
-### Tespit ve Sayım Örneği 1
-![Tespit ve Sayım Örneği 1](img/ex1.png)
 *Bu görsel, modelin bir video üzerinde yaptığı insan tespitlerini, takip edilen ID'lerini ve anlık/toplam sayım bilgilerini göstermektedir.*
 ### Tespit ve Sayım Örneği 2
-![Tespit ve Sayım Örneği 2](img/ex2.png)
+![Tespit ve Sayım Örneği 2]()
 *Farklı bir videoda modelin algılama, takip ve sayım yeteneğini sergileyen bir örnek.*
