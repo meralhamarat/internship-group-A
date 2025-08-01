@@ -1,0 +1,41 @@
+1. Git: Dağıtık Versiyon Kontrol Sistemi
+Nedir?: Projelerde yapılan her değişikliği kaydeden, dosya geçmişini yöneten bir sistemdir.
+
+Çekirdek Yapı:
+Çalışma Dizini (Working Directory): Fiziksel dosyaların bulunduğu alandır. Kod yazma ve düzenleme bu alanda yapılır.
+Hazırlık Alanı (Staging Area): git add <dosya_adı> komutu ile değişikliklerin kaydedilmek üzere işaretlendiği geçici bölümdür.
+Yerel Depo (Local Repository): git commit komutu ile hazırlık alanındaki değişikliklerin kalıcı olarak saklandığı yerdir. Her commit işlemi bir anlık görüntüdür (snapshot).
+
+Temel Komutlar:
+git init: Yeni bir Git deposu başlatır.
+git add .: Çalışma dizinindeki tüm değişiklikleri hazırlık alanına alır.
+git commit -m "Mesaj": Hazırlık alanındaki değişiklikleri yerel depoya kaydeder.
+git status: Değiştirilen, yeni eklenen veya hazırlık alanına alınmış dosyaları gösterir.
+git log: Yapılan commit'lerin geçmişini listeler.
+
+2. GitHub: Git Tabanlı İş Birliği Platformu
+Nedir?: Git depolarını barındıran, bulut tabanlı bir servistir. Kodunuzu uzaktan saklar ve ekip çalışmasını kolaylaştırır.
+Depo (Repository): Projenin tüm dosyalarını ve versiyon geçmişini içeren ana alandır. Her proje için bir depo oluşturulur.
+
+Temel İş Akışı:
+clone: git clone <repo_url> komutuyla uzak depoyu yerel makineye kopyalar.
+push: git push komutu ile yerel depodaki commit'leri GitHub'daki uzak depoya gönderir.
+pull: git pull komutu ile uzak depoda başkaları tarafından yapılan değişiklikleri yerel depoya çeker.
+
+Dallanma ve Birleştirme:
+branch: Ana kod hattından ayrılıp bağımsız bir geliştirme yolu oluşturma. git checkout -b <dal_adı> ile yeni bir dal oluşturulur ve o dala geçiş yapılır.
+merge: Farklı bir daldaki değişiklikleri ana dala dahil etme işlemidir.
+
+Ekip Çalışması Araçları:
+Pull Request (PR): Bir dalda yapılan geliştirmelerin ana depoya birleştirilmesi için oluşturulan taleptir. Kodun incelenmesini ve tartışılmasını sağlar.
+Issues: Hata takibi, özellik talepleri ve görev yönetimi için kullanılır.
+
+3. requirements.txt: Bağımlılık Yönetimi
+Nedir?: Bir Python projesinin çalışması için gerekli olan tüm kütüphaneleri ve versiyonlarını listeleyen metin dosyasıdır.
+Neden Önemlidir?: Projenin farklı ortamlarda (farklı bilgisayarlar, sunucular) tutarlı bir şekilde çalışmasını sağlar. Herkesin aynı kütüphane versiyonlarını kullanmasını garanti eder.
+
+Oluşturma:
+pip freeze > requirements.txt komutuyla, aktif sanal ortamda yüklü olan tüm paketler listelenir ve dosyaya yazılır.
+
+Kurulum:
+pip install -r requirements.txt komutuyla, dosyadaki tüm paketler otomatik olarak kurulur.
