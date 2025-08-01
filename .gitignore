@@ -1,0 +1,39 @@
+# Sanal ortamlar
+venv/
+env/
+*.env
+*.venv
+.yolo_counter_env/
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Video ve büyük dosyalar
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Model dosyaları (genellikle büyük boyutlu)
+*.pt
+*.weights
+*.onnx
+
+# Çıktı klasörleri
+runs/
+output/
+results/
+
+# OS ve kullanıcıya özel dosyalar
+.DS_Store
+Thumbs.db
+
+# Logs ve debug çıktıları
+*.log
+logs/
